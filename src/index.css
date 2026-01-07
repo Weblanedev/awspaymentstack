@@ -1,8 +1,11 @@
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -12,13 +15,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: clamp(1rem, 4vw, 3rem);
-  background: #2d1b4e;
+  padding: 0;
+  background: #1a0d2e;
   position: relative;
   overflow-x: hidden;
   overflow-y: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 button {
   font: inherit;
+  border: none;
+  outline: none;
 }
